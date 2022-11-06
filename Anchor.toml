@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+furrsol_extra_staking = "5tvBzSCacUn2maQkeaU7TzNX7rspSpEnxHagzZceaP7G"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/opt/Apyra/devnet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

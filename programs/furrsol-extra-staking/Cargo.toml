@@ -1,0 +1,21 @@
+[package]
+name = "furrsol-extra-staking"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "furrsol_extra_staking"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.22.1"
+anchor-spl = "0.22.1"
+mpl-candy-machine = "3.1.1"
